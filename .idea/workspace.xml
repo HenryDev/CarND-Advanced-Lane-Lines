@@ -2,27 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c7547f-245d-4fec-b3ba-524b4b2ed84f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/distortion correction.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/1 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/10 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/11 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/12 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/13 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/16 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/17 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/18 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/19 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/2 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/3 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/4 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/5 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/6 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/7 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/8 result.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/9 result.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calibration_pickle.p" afterPath="$PROJECT_DIR$/calibration_pickle.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/thresholds.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/calibration_pickle.p" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/0 undistorted.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/1 undistorted.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/1 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/10 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/11 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/12 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/13 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/16 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/17 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/18 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/19 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/2 undistorted.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/2 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/3 undistorted.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/3 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/4 undistorted.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/4 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/5 undistorted.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/5 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/6 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/7 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/8 with corners drawn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/9 with corners drawn.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/calibrate camera.py" afterPath="$PROJECT_DIR$/source/calibrate camera.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distortion correction.py" afterPath="$PROJECT_DIR$/source/pipeline.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calibrate camera.py" afterPath="$PROJECT_DIR$/calibrate camera.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,45 +41,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$distortion_correction.coverage" NAME="distortion correction Coverage Results" MODIFIED="1491182441659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$calibrate_camera.coverage" NAME="calibrate camera Coverage Results" MODIFIED="1491182297184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$distortion_correction.coverage" NAME="distortion correction Coverage Results" MODIFIED="1491188031238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$calibrate_camera.coverage" NAME="calibrate camera Coverage Results" MODIFIED="1491187895424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="distortion correction.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/distortion correction.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="calibrate camera.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/calibrate camera.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#0#12#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="pipeline.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/pipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,6 +67,14 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>np</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>numpy</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,7 +88,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/calibrate camera.py" />
+        <option value="$PROJECT_DIR$/threshold.py" />
+        <option value="$PROJECT_DIR$/thresholds.py" />
         <option value="$PROJECT_DIR$/distortion correction.py" />
+        <option value="$PROJECT_DIR$/source/pipeline.py" />
       </list>
     </option>
   </component>
@@ -164,6 +163,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarND-Advanced-Lane-Lines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarND-Advanced-Lane-Lines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="output_images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -221,7 +234,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -249,7 +267,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CarND-Advanced-Lane-Lines" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calibrate camera.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/calibrate camera.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,7 +286,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CarND-Advanced-Lane-Lines" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/distortion correction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/pipeline.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -791,12 +809,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491148848038</updated>
-      <workItem from="1491148849691" duration="7562000" />
+      <workItem from="1491148849691" duration="12563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7562000" />
+    <option name="totallyTimeSpent" value="12563000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-3360" y="-1058" width="1680" height="1868" extended-state="0" />
@@ -813,9 +840,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996665" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962757" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -841,8 +868,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/camera_cal/calibration6.jpg">
@@ -960,22 +993,55 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distortion correction.py">
+    <entry file="file://$PROJECT_DIR$/source/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/10 with corners drawn.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/6 with corners drawn.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/calibrate camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/thresholds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calibrate camera.py">
+    <entry file="file://$PROJECT_DIR$/output_images/0 undistorted.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

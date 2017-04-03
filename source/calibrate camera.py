@@ -15,19 +15,19 @@ for index, file in enumerate(files):
     image = cv2.imread(file)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-    retval, corners = cv2.findChessboardCorners(gray, (9, 6), None)
+    were_corners_found, corners = cv2.findChessboardCorners(gray, (9, 6), None)
 
-    if retval:
+    if were_corners_found:
         object_points.append(chessboard_points)
         image_points.append(corners)
 
-        cv2.drawChessboardCorners(image, (9, 6), corners, retval)
+        cv2.drawChessboardCorners(image, (9, 6), corners, were_corners_found)
         result = str(index) + ' with corners drawn.jpg'
         cv2.imwrite('./output_images/' + result, image)
 
 test_image = cv2.imread('./camera_cal/calibration1.jpg')
 image_size = (test_image.shape[1], test_image.shape[0])
-retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(object_points, image_points, image_size, None,
-                                                                     None)
+were_corners_found, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(object_points, image_points,
+                                                                                 image_size, None, None)
 distortion_pickle = {'cameraMatrix': cameraMatrix, 'distCoeffs': distCoeffs}
 pickle.dump(distortion_pickle, open('./calibration_pickle.p', 'wb'))
