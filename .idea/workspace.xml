@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c7547f-245d-4fec-b3ba-524b4b2ed84f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calibrate camera.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/distortion correction.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/1 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/10 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/11 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/12 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/13 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/16 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/17 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/18 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/19 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/2 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/3 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/4 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/5 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/6 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/7 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/8 result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/9 result.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calibration_pickle.p" afterPath="$PROJECT_DIR$/calibration_pickle.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calibrate camera.py" afterPath="$PROJECT_DIR$/calibrate camera.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,24 +33,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$calibrate_camera.coverage" NAME="calibrate camera Coverage Results" MODIFIED="1491175616229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$distortion_correction.coverage" NAME="distortion correction Coverage Results" MODIFIED="1491182441659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$calibrate_camera.coverage" NAME="calibrate camera Coverage Results" MODIFIED="1491182297184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="calibrate camera.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/calibrate camera.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="distortion correction.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/distortion correction.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="calibrate camera.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/calibrate camera.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#12#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +92,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/calibrate camera.py" />
+        <option value="$PROJECT_DIR$/distortion correction.py" />
       </list>
     </option>
   </component>
@@ -65,6 +107,9 @@
     <option name="y" value="-1058" />
     <option name="width" value="1680" />
     <option name="height" value="1868" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -92,6 +137,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CarND-Advanced-Lane-Lines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarND-Advanced-Lane-Lines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarND-Advanced-Lane-Lines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -176,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.calibrate camera">
+  <component name="RunManager" selected="Python.distortion correction">
     <configuration default="false" name="calibrate camera" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,6 +250,25 @@
       <module name="CarND-Advanced-Lane-Lines" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calibrate camera.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="distortion correction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CarND-Advanced-Lane-Lines" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/distortion correction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -692,12 +770,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.calibrate camera" />
+      <item index="1" class="java.lang.String" itemvalue="Python.distortion correction" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.calibrate camera" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.distortion correction" />
+        <item index="1" class="java.lang.String" itemvalue="Python.calibrate camera" />
       </list>
     </recent_temporary>
   </component>
@@ -711,12 +791,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491148848038</updated>
-      <workItem from="1491148849691" duration="6110000" />
+      <workItem from="1491148849691" duration="7562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6110000" />
+    <option name="totallyTimeSpent" value="7562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3360" y="-1058" width="1680" height="1868" extended-state="0" />
@@ -875,10 +955,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_images/straight_lines2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distortion correction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/calibrate camera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

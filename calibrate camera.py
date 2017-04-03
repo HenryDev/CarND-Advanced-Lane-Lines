@@ -22,12 +22,12 @@ for index, file in enumerate(files):
         image_points.append(corners)
 
         cv2.drawChessboardCorners(image, (9, 6), corners, retval)
-        result = str(index) + ' result.jpg'
+        result = str(index) + ' with corners drawn.jpg'
         cv2.imwrite('./output_images/' + result, image)
 
 test_image = cv2.imread('./camera_cal/calibration1.jpg')
 image_size = (test_image.shape[1], test_image.shape[0])
 retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(object_points, image_points, image_size, None,
                                                                      None)
-dist_pickle = {'mtx': cameraMatrix, 'dist': distCoeffs}
-pickle.dump(dist_pickle, open('./calibration_pickle.p', 'wb'))
+distortion_pickle = {'cameraMatrix': cameraMatrix, 'distCoeffs': distCoeffs}
+pickle.dump(distortion_pickle, open('./calibration_pickle.p', 'wb'))
