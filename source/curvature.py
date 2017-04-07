@@ -42,13 +42,13 @@ def draw_curve(warped, image, left_x, right_x, m_inverse, curve_centers):
         1]) ** 2) ** 1.5) / numpy.absolute(2 * curve_fit_cr[0])
 
     camera_center = (left_fit_x[-1] + right_fit_x[-1]) / 2
-    center_diff = (camera_center * warped.shape[1] / 2) * curve_centers.horizontal_meters_per_pixel
-    side_pos = 'left'
+    center_diff = (camera_center - warped.shape[1] / 2) * curve_centers.horizontal_meters_per_pixel
+    side_position = 'left'
     if center_diff <= 0:
-        side_pos = 'right'
+        side_position = 'right'
     cv2.putText(weighted_road, 'radius of curvature = ' + str(round(curve_radius, 3)) + '(m)', (50, 50),
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
-    cv2.putText(weighted_road, 'car is ' + str(abs(round(center_diff, 3))) + 'm ' + side_pos + ' of center', (50, 100),
-                cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+    cv2.putText(weighted_road, 'car is ' + str(abs(round(center_diff, 3))) + 'm ' + side_position + ' of center',
+                (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
     return weighted_road
