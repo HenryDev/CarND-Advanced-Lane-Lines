@@ -3,11 +3,11 @@ import numpy
 
 
 class Tracker:
-    def __init__(self, box_width, box_height, margin, vertical_meters_per_pixel=1, horizontal_meters_per_pixel=1,
+    def __init__(self, window_width, window_height, margin, vertical_meters_per_pixel=1, horizontal_meters_per_pixel=1,
                  smooth_factor=15):
         self.recent_centers = []
-        self.box_width = box_width
-        self.box_height = box_height
+        self.window_width = window_width
+        self.window_height = window_height
         self.margin = margin
         self.vertical_meters_per_pixel = vertical_meters_per_pixel
         self.horizontal_meters_per_pixel = horizontal_meters_per_pixel
@@ -15,22 +15,22 @@ class Tracker:
 
     def find_window_centroids(self, warped):
         window_centroids = []
-        window = numpy.ones(self.box_width)
+        window = numpy.ones(self.window_width)
 
         l_sum = numpy.sum(warped[int(3 * warped.shape[0] / 4):, :int(warped.shape[1] / 2)], axis=0)
-        l_center = numpy.argmax(numpy.convolve(window, l_sum)) - self.box_width / 2
+        l_center = numpy.argmax(numpy.convolve(window, l_sum)) - self.window_width / 2
         r_sum = numpy.sum(warped[int(3 * warped.shape[0] / 4):, int(warped.shape[1] / 2):], axis=0)
-        r_center = numpy.argmax(numpy.convolve(window, r_sum)) - self.box_width / 2 + int(warped.shape[1] / 2)
+        r_center = numpy.argmax(numpy.convolve(window, r_sum)) - self.window_width / 2 + int(warped.shape[1] / 2)
 
         window_centroids.append((l_center, r_center))
 
-        for level in range(1, int(warped.shape[0] / self.box_height)):
-            vertical_slice = warped[int(warped.shape[0] - (level + 1) * self.box_height):int(
-                warped.shape[0] - level * self.box_height), :]
+        for level in range(1, int(warped.shape[0] / self.window_height)):
+            vertical_slice = warped[int(warped.shape[0] - (level + 1) * self.window_height):int(
+                warped.shape[0] - level * self.window_height), :]
             image_layer = numpy.sum(vertical_slice, axis=0)
             conv_signal = numpy.convolve(window, image_layer)
 
-            offset = self.box_width / 2
+            offset = self.window_width / 2
             l_min_index = int(max(l_center + offset - self.margin, 0))
             l_max_index = int(min(l_center + offset + self.margin, warped.shape[1]))
             l_center = numpy.argmax(conv_signal[l_min_index:l_max_index]) + l_min_index - offset
