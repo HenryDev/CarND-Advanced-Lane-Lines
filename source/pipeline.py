@@ -17,14 +17,14 @@ for index, file in enumerate(files):
     image = cv2.undistort(cv2.imread(file), cameraMatrix, distCoeffs, None, cameraMatrix)
 
     processed_image = threshold_pipeline(image)
-    warped, m = transform(image, processed_image)
+    warped, m_inverse = transform(image, processed_image)
 
-    box_width = 25
-    box_height = 80
-    curve_centers = Tracker(box_width, box_height, 25, 10 / 720, 4 / 384)
+    window_width = 25
+    window_height = 80
+    curve_centers = Tracker(window_width, window_height, 25, 10 / 720, 4 / 384)
     window_centroids = curve_centers.find_window_centroids(warped)
-    sliding_windows, left_x, right_x = draw_windows(warped, window_centroids, box_width, box_height)
-    road_curve = draw_curve(image, warped, box_width, box_height, left_x, right_x)
+    sliding_windows, left_x, right_x = draw_windows(warped, window_centroids, window_width, window_height)
+    weighted_road = draw_curve(warped, image, window_height, window_width, left_x, right_x, m_inverse)
 
     correction_result = str(index) + ' undistorted.jpg'
-    cv2.imwrite('../output_images/' + correction_result, road_curve)
+    cv2.imwrite('../output_images/' + correction_result, weighted_road)

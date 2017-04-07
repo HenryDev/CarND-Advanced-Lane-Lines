@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c7547f-245d-4fec-b3ba-524b4b2ed84f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/curvature.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/calibration_pickle.p" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/0 undistorted.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/1 undistorted.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/2 undistorted.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/3 undistorted.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/4 undistorted.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/5 undistorted.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output_images/0 undistorted.jpg" afterPath="$PROJECT_DIR$/output_images/0 undistorted.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output_images/1 undistorted.jpg" afterPath="$PROJECT_DIR$/output_images/1 undistorted.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output_images/2 undistorted.jpg" afterPath="$PROJECT_DIR$/output_images/2 undistorted.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output_images/3 undistorted.jpg" afterPath="$PROJECT_DIR$/output_images/3 undistorted.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output_images/4 undistorted.jpg" afterPath="$PROJECT_DIR$/output_images/4 undistorted.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output_images/5 undistorted.jpg" afterPath="$PROJECT_DIR$/output_images/5 undistorted.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/calibrate camera.py" afterPath="$PROJECT_DIR$/source/calibrate camera.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/curvature.py" afterPath="$PROJECT_DIR$/source/curvature.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/pipeline.py" afterPath="$PROJECT_DIR$/source/pipeline.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/tracker.py" afterPath="$PROJECT_DIR$/source/tracker.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/transformer.py" afterPath="$PROJECT_DIR$/source/transformer.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,81 +22,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$curvature.coverage" NAME="curvature Coverage Results" MODIFIED="1491513681926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$pipeline.coverage" NAME="pipeline Coverage Results" MODIFIED="1491516074454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$curvature.coverage" NAME="curvature Coverage Results" MODIFIED="1491531033537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$pipeline.coverage" NAME="pipeline Coverage Results" MODIFIED="1491531379983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$distortion_correction.coverage" NAME="distortion correction Coverage Results" MODIFIED="1491513103228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$calibrate_camera.coverage" NAME="calibrate camera Coverage Results" MODIFIED="1491513860399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.295164">
+    <splitter split-orientation="vertical" split-proportion="0.38465816">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="line.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/source/line.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="transformer.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/source/transformer.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pipeline.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/source/pipeline.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="thresholds.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/source/thresholds.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="calibrate camera.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/source/calibrate camera.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="449">
-                  <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
         <splitter split-orientation="horizontal" split-proportion="0.5">
           <split-first>
-            <leaf>
-              <file leaf-file-name="curvature.py" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/source/curvature.py">
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="line.py" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/source/line.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="420">
-                      <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                    <state relative-caret-position="45">
+                      <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="pipeline.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/source/pipeline.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="450">
+                      <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                       <folding>
                         <element signature="e#0#10#0" expanded="true" />
                       </folding>
@@ -110,11 +60,47 @@
           </split-first>
           <split-second>
             <leaf>
+              <file leaf-file-name="transformer.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/source/transformer.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="30">
+                      <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+                      <folding>
+                        <element signature="e#0#10#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="horizontal" split-proportion="0.5">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="curvature.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/source/curvature.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="585">
+                      <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+                      <folding>
+                        <element signature="e#0#10#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="tracker.py" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/source/tracker.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="225">
-                      <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+                    <state relative-caret-position="545">
+                      <caret line="46" column="70" lean-forward="false" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
                       <folding>
                         <element signature="e#0#10#0" expanded="true" />
                       </folding>
@@ -164,13 +150,13 @@
         <option value="$PROJECT_DIR$/threshold.py" />
         <option value="$PROJECT_DIR$/thresholds.py" />
         <option value="$PROJECT_DIR$/distortion correction.py" />
-        <option value="$PROJECT_DIR$/source/transformer.py" />
         <option value="$PROJECT_DIR$/source/line tracker.py" />
         <option value="$PROJECT_DIR$/source/line.py" />
-        <option value="$PROJECT_DIR$/source/tracker.py" />
         <option value="$PROJECT_DIR$/source/calibrate camera.py" />
-        <option value="$PROJECT_DIR$/source/pipeline.py" />
         <option value="$PROJECT_DIR$/source/curvature.py" />
+        <option value="$PROJECT_DIR$/source/tracker.py" />
+        <option value="$PROJECT_DIR$/source/transformer.py" />
+        <option value="$PROJECT_DIR$/source/pipeline.py" />
       </list>
     </option>
   </component>
@@ -204,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,9 +261,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -874,8 +860,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.pipeline" />
-        <item index="1" class="java.lang.String" itemvalue="Python.calibrate camera" />
-        <item index="2" class="java.lang.String" itemvalue="Python.curvature" />
+        <item index="1" class="java.lang.String" itemvalue="Python.curvature" />
+        <item index="2" class="java.lang.String" itemvalue="Python.calibrate camera" />
       </list>
     </recent_temporary>
   </component>
@@ -901,12 +887,13 @@
       <workItem from="1491428182911" duration="6862000" />
       <workItem from="1491495150292" duration="23000" />
       <workItem from="1491506368001" duration="27000" />
-      <workItem from="1491510693451" duration="4080000" />
+      <workItem from="1491510693451" duration="4220000" />
+      <workItem from="1491529330556" duration="2018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29011000" />
+    <option name="totallyTimeSpent" value="31169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -930,14 +917,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13952196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13952196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08065476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -951,6 +937,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1301,23 +1288,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2017.1/python_stubs/1073716407/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="3144" column="4" lean-forward="false" selection-start-line="3144" selection-start-column="4" selection-end-line="3144" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/tracker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/line.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1326,36 +1296,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/transformer.py">
+    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2017.1/python_stubs/1073716407/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/thresholds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="1780" column="4" lean-forward="false" selection-start-line="1780" selection-start-column="4" selection-end-line="1780" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/calibrate camera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/curvature.py">
+    <entry file="file://$PROJECT_DIR$/source/thresholds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="46" column="70" lean-forward="false" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/transformer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -1364,8 +1342,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="450">
           <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/curvature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
