@@ -20,12 +20,16 @@ def draw_curve(warped, image, left_x, right_x, m_inverse, curve_centers):
     right_lane = numpy.array(list(zip(numpy.concatenate(
         (right_fit_x - curve_centers.window_width / 2, right_fit_x[::-1] + curve_centers.window_width / 2), axis=0),
         numpy.concatenate((y_values, y_values[::-1]), axis=0))), numpy.int32)
+    inner_lane = numpy.array(list(zip(numpy.concatenate(
+        (left_fit_x + curve_centers.window_width / 2, right_fit_x[::-1] - curve_centers.window_width / 2), axis=0),
+        numpy.concatenate((y_values, y_values[::-1]), axis=0))), numpy.int32)
 
     road = numpy.zeros_like(image)
     road_background = numpy.zeros_like(image)
 
     cv2.fillPoly(road, [left_lane], [255, 0, 0])
     cv2.fillPoly(road, [right_lane], [0, 0, 255])
+    cv2.fillPoly(road, [inner_lane], [0, 255, 0])
     cv2.fillPoly(road_background, [left_lane], [255, 255, 255])
     cv2.fillPoly(road_background, [right_lane], [255, 255, 255])
 
@@ -34,7 +38,7 @@ def draw_curve(warped, image, left_x, right_x, m_inverse, curve_centers):
     warped_road_background = cv2.warpPerspective(road_background, m_inverse, image_size, flags=cv2.INTER_LINEAR)
 
     base = cv2.addWeighted(image, 1, warped_road_background, -1, 0)
-    weighted_road = cv2.addWeighted(base, 1, warped_road, 1, 0)
+    weighted_road = cv2.addWeighted(base, 1, warped_road, 0.7, 0)
 
     curve_fit_cr = numpy.polyfit(numpy.array(res_yvals, numpy.float32) * curve_centers.vertical_meters_per_pixel,
                                  numpy.array(left_x, numpy.float32) * curve_centers.horizontal_meters_per_pixel, 2)
