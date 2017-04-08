@@ -18,4 +18,4 @@ def process_video(original, processed):
     video_clip.write_videofile(processed, audio=False)
 
 
-process_video(harder_challenge_video, harder_challenge_output)
+process_video(project_video, project_output)

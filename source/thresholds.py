@@ -57,6 +57,7 @@ def threshold_pipeline(image):
     color = color_threshold(image, (100, 255), (50, 255))
     combined_thresholds = numpy.zeros_like(image[:, :, 0])
     gradient_hits = (gradient_x == 1) & (gradient_y == 1)
-    magnitude_direction = (magnitude == 1) & (direction == 1)
-    combined_thresholds[gradient_hits | magnitude_direction | color == 1] = 255
+    # magnitude_direction = (magnitude == 1) & (direction == 1)
+    # combined_thresholds[gradient_hits | magnitude_direction | color == 1] = 255
+    combined_thresholds[gradient_hits | color == 1] = 255
     return combined_thresholds
