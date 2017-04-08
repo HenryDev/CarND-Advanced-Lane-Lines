@@ -13,8 +13,11 @@ def process_image(image):
     dist_coeffs = distortion_pickle['distCoeffs']
 
     image = cv2.undistort(image, camera_matrix, dist_coeffs, None, camera_matrix)
+
     processed_image = threshold_pipeline(image)
+
     warped, m_inverse = transform(image, processed_image)
+
     window_width = 25
     window_height = 80
     curve_centers = Tracker(window_width, window_height, 25, 10 / 720, 4 / 384)
