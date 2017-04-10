@@ -23,5 +23,7 @@ def process_image(image):
     curve_centers = Tracker(window_width, window_height, 25, 10 / 720, 4 / 384)
     window_centroids = curve_centers.find_window_centroids(warped)
     sliding_windows, left_x, right_x = draw_windows(warped, window_centroids, window_width, window_height)
+
     weighted_road = draw_curve(warped, image, left_x, right_x, m_inverse, curve_centers)
-    return weighted_road
+
+    return sliding_windows
