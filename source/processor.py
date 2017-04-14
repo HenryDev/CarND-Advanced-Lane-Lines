@@ -1,7 +1,12 @@
 import pickle
 import cv2
 
-from source.curvature import draw_curve
+import numpy
+
+from source.curvature import draw_curve, add_text, find_center_diff, find_radius, overlay_curvature_pos, \
+    overlay_lane_detection, calc_offset, calc_radius, polyfit_pixels
+from source.histogram import extend_fit, sliding_windows
+from source.line import Line
 from source.thresholds import threshold_pipeline
 from source.tracker import Tracker, draw_windows
 from source.transformer import transform
@@ -18,12 +23,23 @@ def process_image(image):
 
     warped, m_inverse = transform(image, processed_image)
 
-    window_width = 25
-    window_height = 80
-    curve_centers = Tracker(window_width, window_height, 25, 10 / 720, 4 / 384)
-    window_centroids = curve_centers.find_window_centroids(warped)
-    sliding_windows, left_x, right_x = draw_windows(warped, window_centroids, window_width, window_height)
+    left_line = Line()
+    right_line = Line()
+    if left_line.detected:
+        leftx, lefty, rightx, righty = extend_fit(warped, left_line.current_fit, right_line.current_fit)
 
-    weighted_road = draw_curve(warped, image, left_x, right_x, m_inverse, curve_centers)
+    else:
+        leftx, lefty, rightx, righty = sliding_windows(warped)
 
-    return sliding_windows
+    left_fit, right_fit = polyfit_pixels(leftx, lefty, rightx, righty)
+
+    left_line.update_fit(left_fit)
+
+    offset = calc_offset(warped, left_fit, right_fit)
+
+    overlay = overlay_lane_detection(image, warped, m_inverse, left_line.best_fit, right_line.best_fit)
+
+    left_curverad, right_curverad = calc_radius(warped, leftx, lefty, rightx, righty)
+    weighted_road = overlay_curvature_pos(overlay, left_curverad, right_curverad, offset)
+
+    return weighted_road
