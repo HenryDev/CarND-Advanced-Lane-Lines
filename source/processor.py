@@ -22,12 +22,12 @@ def process_image(image):
     left_line = Line()
     right_line = Line()
     if left_line.detected:
-        leftx, lefty, rightx, righty = extend_fit(warped, left_line.current_fit, right_line.current_fit)
+        left_x, left_y, right_x, right_y = extend_fit(warped, left_line.current_fit, right_line.current_fit)
 
     else:
-        leftx, lefty, rightx, righty = sliding_windows(warped)
+        left_x, left_y, right_x, right_y = sliding_windows(warped)
 
-    left_fit, right_fit = polyfit_pixels(leftx, lefty, rightx, righty)
+    left_fit, right_fit = polyfit_pixels(left_x, left_y, right_x, right_y)
 
     left_line.update_fit(left_fit)
     right_line.update_fit(right_fit)
@@ -36,7 +36,7 @@ def process_image(image):
 
     overlay = overlay_lane_detection(image, warped, m_inverse, left_line.best_fit, right_line.best_fit)
 
-    left_curverad, right_curverad = calc_radius(warped, leftx, lefty, rightx, righty)
+    left_curverad, right_curverad = calc_radius(warped, left_x, left_y, right_x, right_y)
     weighted_road = overlay_curvature_pos(overlay, left_curverad, right_curverad, offset)
 
     return weighted_road
