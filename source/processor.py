@@ -26,4 +26,4 @@ def process_image(image):
 
     weighted_road = draw_curve(warped, image, left_x, right_x, m_inverse, curve_centers)
 
-    return sliding_windows
+    return weighted_road
