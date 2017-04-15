@@ -34,6 +34,7 @@ def process_image(image):
     left_fit, right_fit = polyfit_pixels(leftx, lefty, rightx, righty)
 
     left_line.update_fit(left_fit)
+    right_line.update_fit(right_fit)
 
     offset = calc_offset(warped, left_fit, right_fit)
 

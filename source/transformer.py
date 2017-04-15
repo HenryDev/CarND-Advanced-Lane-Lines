@@ -17,6 +17,7 @@ def transform(image, processed_image):
                                  [image_size[0] - offset, 0],
                                  [image_size[0] - offset, image_size[1]],
                                  [offset, image_size[1]]])
+
     m = cv2.getPerspectiveTransform(source, destination)
     m_inverse = cv2.getPerspectiveTransform(destination, source)
     warped = cv2.warpPerspective(processed_image, m, image_size, flags=cv2.INTER_LINEAR)

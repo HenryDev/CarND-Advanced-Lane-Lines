@@ -29,4 +29,4 @@ class Line:
     def update_fit(self, line_fit):
         self.current_fit = line_fit
         self.recent_fits.append(line_fit)
-        self.best_fit = numpy.average(self.recent_fits)
+        self.best_fit = numpy.average(self.recent_fits, axis=0)
