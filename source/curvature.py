@@ -11,7 +11,7 @@ def add_text(overlay, radius, offset):
         side = "right"
     else:
         side = "left"
-    cv2.putText(overlay, "car is {0:.2g}m {1} of center".format(numpy.absolute(offset), side), (50, 150),
+    cv2.putText(overlay, "car is {0:.2g}m {1} of center".format(numpy.absolute(offset), side), (50, 100),
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
     return overlay
 
