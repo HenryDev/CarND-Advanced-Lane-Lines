@@ -22,40 +22,37 @@ def sliding_windows(warped):
     right_index = []
 
     for window in range(number_of_windows):
-        # Identify window boundaries in x and y (and right and left)
-        win_y_low = warped.shape[0] - (window + 1) * window_height
-        win_y_high = warped.shape[0] - window * window_height
-        win_xleft_low = current_left - margin
-        win_xleft_high = current_left + margin
-        win_xright_low = current_right - margin
-        win_xright_high = current_right + margin
-        # Draw the windows on the visualization image
-        cv2.rectangle(output_image, (win_xleft_low, win_y_low), (win_xleft_high, win_y_high), (0, 255, 0), 2)
-        cv2.rectangle(output_image, (win_xright_low, win_y_low), (win_xright_high, win_y_high), (0, 255, 0), 2)
-        # Identify the nonzero pixels in x and y within the window
-        good_left_inds = ((nonzero_y >= win_y_low) & (nonzero_y < win_y_high) & (nonzero_x >= win_xleft_low) & (
-            nonzero_x < win_xleft_high)).nonzero()[0]
-        good_right_inds = ((nonzero_y >= win_y_low) & (nonzero_y < win_y_high) & (nonzero_x >= win_xright_low) & (
-            nonzero_x < win_xright_high)).nonzero()[0]
-        # Append these indices to the lists
-        left_index.append(good_left_inds)
-        right_index.append(good_right_inds)
-        # If you found > minimum_pixels pixels, recenter next window on their mean position
-        if len(good_left_inds) > minimum_pixels:
-            current_left = numpy.int(numpy.mean(nonzero_x[good_left_inds]))
-        if len(good_right_inds) > minimum_pixels:
-            current_right = numpy.int(numpy.mean(nonzero_x[good_right_inds]))
+        y_low = warped.shape[0] - (window + 1) * window_height
+        y_high = warped.shape[0] - window * window_height
+        x_left_low = current_left - margin
+        x_left_high = current_left + margin
+        x_right_low = current_right - margin
+        x_right_high = current_right + margin
+        cv2.rectangle(output_image, (x_left_low, y_low), (x_left_high, y_high), (0, 255, 0), 2)
+        cv2.rectangle(output_image, (x_right_low, y_low), (x_right_high, y_high), (0, 255, 0), 2)
+        left_hit = ((nonzero_y >= y_low)
+                    & (nonzero_y < y_high)
+                    & (nonzero_x >= x_left_low)
+                    & (nonzero_x < x_left_high)).nonzero()[0]
+        right_hit = ((nonzero_y >= y_low)
+                     & (nonzero_y < y_high)
+                     & (nonzero_x >= x_right_low)
+                     & (nonzero_x < x_right_high)).nonzero()[0]
+        left_index.append(left_hit)
+        right_index.append(right_hit)
+        if len(left_hit) > minimum_pixels:
+            current_left = numpy.int(numpy.mean(nonzero_x[left_hit]))
+        if len(right_hit) > minimum_pixels:
+            current_right = numpy.int(numpy.mean(nonzero_x[right_hit]))
 
-    # Concatenate the arrays of indices
     left_index = numpy.concatenate(left_index)
     right_index = numpy.concatenate(right_index)
 
-    # Extract left and right line pixel positions
-    leftx = nonzero_x[left_index]
-    lefty = nonzero_y[left_index]
-    rightx = nonzero_x[right_index]
-    righty = nonzero_y[right_index]
-    return leftx, lefty, rightx, righty
+    left_x = nonzero_x[left_index]
+    left_y = nonzero_y[left_index]
+    right_x = nonzero_x[right_index]
+    right_y = nonzero_y[right_index]
+    return left_x, left_y, right_x, right_y
 
 
 def extend_fit(warped, left_fit, right_fit):
