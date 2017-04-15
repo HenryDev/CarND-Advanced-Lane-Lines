@@ -1,7 +1,7 @@
 import cv2
 import pickle
 
-from source.curvature import overlay_curvature_pos, overlay_lane_detection, calc_offset, calc_radius, polyfit_pixels
+from source.curvature import add_text, overlay_lane_detection, calc_offset, calc_radius, polyfit_pixels
 from source.histogram import extend_fit, sliding_windows
 from source.line import Line
 from source.thresholds import threshold_pipeline
@@ -28,7 +28,6 @@ def process_image(image):
         left_x, left_y, right_x, right_y = sliding_windows(warped)
 
     left_fit, right_fit = polyfit_pixels(left_x, left_y, right_x, right_y)
-
     left_line.update_fit(left_fit)
     right_line.update_fit(right_fit)
 
@@ -37,6 +36,6 @@ def process_image(image):
     overlay = overlay_lane_detection(image, warped, m_inverse, left_line.best_fit, right_line.best_fit)
 
     left_curverad, right_curverad = calc_radius(warped, left_x, left_y, right_x, right_y)
-    weighted_road = overlay_curvature_pos(overlay, left_curverad, right_curverad, offset)
+    weighted_road = add_text(overlay, left_curverad, offset)
 
     return weighted_road
