@@ -1,14 +1,10 @@
-import pickle
 import cv2
+import pickle
 
-import numpy
-
-from source.curvature import draw_curve, add_text, find_center_diff, find_radius, overlay_curvature_pos, \
-    overlay_lane_detection, calc_offset, calc_radius, polyfit_pixels
+from source.curvature import overlay_curvature_pos, overlay_lane_detection, calc_offset, calc_radius, polyfit_pixels
 from source.histogram import extend_fit, sliding_windows
 from source.line import Line
 from source.thresholds import threshold_pipeline
-from source.tracker import Tracker, draw_windows
 from source.transformer import transform
 
 
@@ -43,4 +39,4 @@ def process_image(image):
     left_curverad, right_curverad = calc_radius(warped, leftx, lefty, rightx, righty)
     weighted_road = overlay_curvature_pos(overlay, left_curverad, right_curverad, offset)
 
-    return weighted_road
+    return processed_image

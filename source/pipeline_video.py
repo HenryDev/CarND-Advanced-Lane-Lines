@@ -13,7 +13,7 @@ harder_challenge_output = '../harder_challenge_output.mp4'
 
 
 def process_video(original, processed):
-    clip = VideoFileClip(original).subclip(30,44)
+    clip = VideoFileClip(original)
     video_clip = clip.fl_image(process_image)
     video_clip.write_videofile(processed, audio=False)
 
