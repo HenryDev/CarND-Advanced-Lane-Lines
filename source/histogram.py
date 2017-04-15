@@ -73,22 +73,16 @@ def sliding_windows(binary_warped):
 
 
 def extend_fit(binary_warped, left_fit, right_fit):
-    # Assume you now have a new warped binary image
-    # from the next frame of video (also called "binary_warped")
-    # It's now much easier to find line pixels!
     nonzero = binary_warped.nonzero()
-    nonzeroy = np.array(nonzero[0])
-    nonzerox = np.array(nonzero[1])
+    nonzero_y = np.array(nonzero[0])
+    nonzero_x = np.array(nonzero[1])
     margin = 100
-    left_lane_inds = ((nonzerox > (left_fit[0] * (nonzeroy ** 2) + left_fit[1] * nonzeroy + left_fit[2] - margin)) & (
-        nonzerox < (left_fit[0] * (nonzeroy ** 2) + left_fit[1] * nonzeroy + left_fit[2] + margin)))
-    right_lane_inds = (
-        (nonzerox > (right_fit[0] * (nonzeroy ** 2) + right_fit[1] * nonzeroy + right_fit[2] - margin)) & (
-            nonzerox < (right_fit[0] * (nonzeroy ** 2) + right_fit[1] * nonzeroy + right_fit[2] + margin)))
-
-    # Again, extract left and right line pixel positions
-    leftx = nonzerox[left_lane_inds]
-    lefty = nonzeroy[left_lane_inds]
-    rightx = nonzerox[right_lane_inds]
-    righty = nonzeroy[right_lane_inds]
+    left_index = ((nonzero_x > (left_fit[0] * (nonzero_y ** 2) + left_fit[1] * nonzero_y + left_fit[2] - margin))
+                  & (nonzero_x < (left_fit[0] * (nonzero_y ** 2) + left_fit[1] * nonzero_y + left_fit[2] + margin)))
+    right_index = ((nonzero_x > (right_fit[0] * (nonzero_y ** 2) + right_fit[1] * nonzero_y + right_fit[2] - margin))
+                   & (nonzero_x < (right_fit[0] * (nonzero_y ** 2) + right_fit[1] * nonzero_y + right_fit[2] + margin)))
+    leftx = nonzero_x[left_index]
+    lefty = nonzero_y[left_index]
+    rightx = nonzero_x[right_index]
+    righty = nonzero_y[right_index]
     return leftx, lefty, rightx, righty

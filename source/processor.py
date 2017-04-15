@@ -39,4 +39,4 @@ def process_image(image):
     left_curverad, right_curverad = calc_radius(warped, leftx, lefty, rightx, righty)
     weighted_road = overlay_curvature_pos(overlay, left_curverad, right_curverad, offset)
 
-    return processed_image
+    return weighted_road
