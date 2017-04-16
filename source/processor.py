@@ -23,7 +23,6 @@ def process_image(image):
     right_line = Line()
     if left_line.detected:
         left_x, left_y, right_x, right_y = extend_fit(warped, left_line.current_fit, right_line.current_fit)
-
     else:
         left_x, left_y, right_x, right_y = sliding_windows(warped)
 
